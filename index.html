@@ -1,183 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional Cyber Services and Digital Printing Solutions">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Achaba Analytics | Cyber Services & Digital Printing</title>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ca5926459.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Djangoz Enterprise</title>
 </head>
+
 <body>
-    <!-- Navigation -->
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html"><span class="logo-text">DJANGOZ ENTERPRISE</span></a>
-                </div>
-                
-                <div class="nav-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="nav-cta">
-                    <a href="#contact" class="btn btn-outline">Get Quote</a>
-                </div>
-                
-                <button class="hamburger" id="hamburger">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
-            </nav>
-        </div>
+        <div class="logo">Djangoz Enterprise</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">DJANGOZ ENTERPRISE</h1>
-                    <p class="hero-description">Professional <span class="highlight">Cyber Services</span> and <span class="highlight">Premium Digital Printing</span> for modern solutions</p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#services" class="btn btn-primary">
-                            <span>Explore Services</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>Contact Us</span>
-                        </a>
-                    </div>
+    <div class="text-content">
+        <h1>Djangoz Enterprise</h1>
+        <p>Your One Stop <span class="span-p">Cyber Solutions </span> </p>
+        <div class="hero-btn">
+        <button class="explore-services">Explore Services <i class="fa-solid fa-angle-right"></i> </button>
+        <button class="contact-us" id="openModal">Contact Us <i class="fa-solid fa-phone-flip"></i> </button>
+        </div>
+    </div>
+        <div class="contact-modal" id="contact-form">
+            <div class="modal-form">
+                <div class="form-header">
+                    <p>Please fill this form to contact us</p>
+                    <i class="fa-solid fa-x" id="close-form"></i>
                 </div>
+                <form action="/" method="POST">
+                    <div class="input-fields">
+                        <label for="name">Name <span class="asterix">*</span> </label>
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-fields">
+                        <label for="email">Email <span class="asterix">*</span> </label>
+                        <input type="email" id="email" name="email" placeholder="example@info.com" required>
+                    </div>
+                    <div class="input-fields">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="text-area" class="textarea"
+                            placeholder="Enter your message here"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                    <div class="privacy-policy">
+                        <p>By clicking "Send Message" button, I expressly agree to Djangoz Enterprise <a href="#">Terms
+                                of
+                                Service</a> and
+                            understand that my account information will be used according to Djangoz Enterprise <a
+                                href="#">Privacy Policy</a>
+                        </p>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
 
-    <!-- Services Preview -->
-    <section class="services-preview" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h6 class="section-subtitle">Our Expertise</h6>
-                <h2 class="section-title">Comprehensive Services</h2>
-                <p class="section-description">We deliver end-to-end solutions tailored to your service needs</p>
-            </div>
-            
-            <div class="services-grid">
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-print"></i>
-                    </div>
-                    <h3>Digital Printing</h3>
-                    <p>High-quality business cards, banners, brochures, and promotional materials with quick turnaround.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Custom websites, e-commerce solutions, and web applications tailored to your business needs.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Data Analytics</h3>
-                    <p>Business intelligence, data visualization, and analytics solutions to drive informed decisions.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Stay in the Loop</h2>
-                <p>Get in touch for a free consultation and quote for your project</p>
-                <a href="#contact" class="btn btn-light">
-                    <i class="fas fa-envelope"></i>
-                    <span>Get Started Today</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <span class="logo-text">Achaba Analytics</span>
-                    </div>
-                    <p class="footer-description">Reach Us</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <hr>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">General Cyber Services</a></li>
-                        <li><a href="#">Digital Printing</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                        <li><a href="#">IT Consulting</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i>Ndwaru, Car-Wash Road Opp Deliverance Church</p>
-                        <p><i class="fas fa-phone"></i> (+254) 727-710-407</p>
-                        <p><i class="fas fa-envelope"></i>achaba-analytics@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 | DJANGOZ ENTERPRISE. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
