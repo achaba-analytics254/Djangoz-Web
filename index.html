@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1ca5926459.js" crossorigin="anonymous"></script>
+
+    <head>
+        <script
+            src="https://www.google.com/recaptcha/enterprise.js?render=6Lf6tV4sAAAAAOZuUfPdaZr4Vjt_m8THOAjpUOOO"></script>
+        <!-- Your code -->
+    </head>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Djangoz Enterprise</title>
 </head>
 
@@ -25,42 +31,44 @@
         <h1>Djangoz Enterprise</h1>
         <p>Your One Stop <span class="span-p">Cyber Solutions </span> </p>
         <div class="hero-btn">
-        <button class="explore-services">Explore Services <i class="fa-solid fa-angle-right"></i> </button>
-        <button class="contact-us" id="openModal">Contact Us <i class="fa-solid fa-phone-flip"></i> </button>
+            <button class="explore-services">Explore Services <i class="fa-solid fa-angle-right"></i> </button>
+            <button class="contact-us" id="openModal" type="submit" class="g-recaptcha"
+                data-sitekey="6Lf6tV4sAAAAAOZuUfPdaZr4Vjt_m8THOAjpUOOO" data-callback='onSubmit'
+                data-action='submit'>Contact Us <i class="fa-solid fa-phone-flip"></i> </button>
         </div>
     </div>
-        <div class="contact-modal" id="contact-form">
-            <div class="modal-form">
-                <div class="form-header">
-                    <p>Please fill this form to contact us</p>
-                    <i class="fa-solid fa-x" id="close-form"></i>
-                </div>
-                <form action="/" method="POST">
-                    <div class="input-fields">
-                        <label for="name">Name <span class="asterix">*</span> </label>
-                        <input type="text" id="name" name="name" placeholder="Full Name" required>
-                    </div>
-                    <div class="input-fields">
-                        <label for="email">Email <span class="asterix">*</span> </label>
-                        <input type="email" id="email" name="email" placeholder="example@info.com" required>
-                    </div>
-                    <div class="input-fields">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="text-area" class="textarea"
-                            placeholder="Enter your message here"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
-                    <div class="privacy-policy">
-                        <p>By clicking "Send Message" button, I expressly agree to Djangoz Enterprise <a href="#">Terms
-                                of
-                                Service</a> and
-                            understand that my account information will be used according to Djangoz Enterprise <a
-                                href="#">Privacy Policy</a>
-                        </p>
-                    </div>
-                </form>
+    <div class="contact-modal" id="contact-form">
+        <div class="modal-form">
+            <div class="form-header">
+                <p>Please fill this form to contact us</p>
+                <i class="fa-solid fa-x" id="close-form"></i>
             </div>
+            <form action="/" method="POST">
+                <div class="input-fields">
+                    <label for="name">Name <span class="asterix">*</span> </label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-fields">
+                    <label for="email">Email <span class="asterix">*</span> </label>
+                    <input type="email" id="email" name="email" placeholder="example@info.com" required>
+                </div>
+                <div class="input-fields">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="text-area" class="textarea"
+                        placeholder="Enter your message here"></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                <div class="privacy-policy">
+                    <p>By clicking "Send Message" button, I expressly agree to Djangoz Enterprise <a href="#">Terms
+                            of
+                            Service</a> and
+                        understand that my account information will be used according to Djangoz Enterprise <a
+                            href="#">Privacy Policy</a>
+                    </p>
+                </div>
+            </form>
         </div>
+    </div>
 
 
     <script src="js/main.js"></script>
