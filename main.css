@@ -175,3 +175,9 @@ li a:hover{
 .fa-phone-flip{
     margin-left: 10px;
 }
+
+@media only screen and (max-width: 992px) {
+  .text-content {
+    text-align: center;
+  }
+}
