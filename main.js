@@ -10,7 +10,3 @@ openModal.addEventListener('click', () => {
 closeForm.addEventListener('click', () => {
     contactForm.classList.remove('show');
 });
-
-  function onSubmit(token) {
-    document.getElementById("contact-form").submit();
-  }
