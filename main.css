@@ -10,7 +10,7 @@ body{
 }
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: white;
     padding: 15px 40px;
@@ -129,19 +129,28 @@ li a:hover{
     color: tomato;
 }
 .text-content{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 .text-content h1{
     font-size: 3rem;
+    color: #fff;
     font-weight: bold;
     margin-bottom: 15px;
 }
+.h1-span{
+    color: orange;
+}
 .text-content p{
+    color: #fff;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -151,7 +160,7 @@ li a:hover{
     gap: 20px;
 }
 .span-p{
-    color: dodgerblue;
+    color: orange;
 }
 .explore-services{
     background: dodgerblue;
@@ -185,12 +194,18 @@ li a:hover{
 .fa-phone-flip{
     margin-left: 10px;
 }
-.top-p{
+.top{
     text-align: center;
+    margin: 80px 20px;
+}
+.top-p{
     color: tomato;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 30px;
+}
+section{
+    height: 60vh;
 }
 .main-cards{
     display: flex;
