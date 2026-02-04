@@ -6,7 +6,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     line-height: 1.6; /*space between elements */
-    background: #eee;
+    background: #f5f3f3;
 }
 .header{
     display: flex;
@@ -134,7 +134,7 @@ li a:hover{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .text-content h1{
     font-size: 3rem;
@@ -184,6 +184,29 @@ li a:hover{
 }
 .fa-phone-flip{
     margin-left: 10px;
+}
+.top-p{
+    text-align: center;
+    color: tomato;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.main-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.card-container{
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    border-radius: 12px;
+    width: 500px;
+    border-top: 2px solid tomato;
 }
 
 
