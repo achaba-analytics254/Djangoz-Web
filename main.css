@@ -198,6 +198,9 @@ li a:hover{
     text-align: center;
     margin: 80px 20px;
 }
+.top h3{
+    opacity: .8;
+}
 .top-p{
     color: tomato;
     font-size: 15px;
@@ -229,11 +232,18 @@ section{
     border-color: #4f46e5;
     cursor: pointer;
 }
+.card-container img{
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid orange;
+}
 .card-container h3{
     margin-bottom: 20px;
+    opacity: .8;
 }
 .card-container p{
     margin-bottom: 20px;
+    opacity: .8;
 }
 .card-container button{
     margin-top: auto;
