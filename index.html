@@ -29,16 +29,20 @@
         <p>Your One Stop <span class="span-p">Cyber Solutions </span> </p>
         <div class="hero-btn">
             <button class="explore-services">Explore Services <i class="fa-solid fa-angle-right"></i> </button>
-            <button class="contact-us" id="openModal" type="submit">Contact Us <i class="fa-solid fa-phone-flip"></i> </button>
+            <button class="contact-us" id="openModal" type="button">Contact Us <i class="fa-solid fa-phone-flip"></i>
+            </button>
         </div>
     </div>
     <div class="contact-modal" id="contact-form">
         <div class="modal-form">
             <div class="form-header">
-                <p>Please fill this form to contact us</p>
-                <i class="fa-solid fa-x" id="close-form"></i>
+                <h2>Contact Us</h2>
+                <p>Please fill this form to send us a message</p>
             </div>
-            <form action="/" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="input-fields">
+                    <input type="hidden" name="access_key" value="63f68dea-a60c-43a8-9d29-cd5347d227e6">
+                </div>
                 <div class="input-fields">
                     <label for="name">Name <span class="asterix">*</span> </label>
                     <input type="text" id="name" name="name" placeholder="Full Name" required>
@@ -49,10 +53,14 @@
                 </div>
                 <div class="input-fields">
                     <label for="message">Message</label>
-                    <textarea name="message" id="text-area" class="textarea"
+                    <textarea name="message" id="message" class="textarea"
                         placeholder="Enter your message here"></textarea>
                 </div>
+                <div class="form-btn">
                 <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                <button type="button" class="submit-btn" id="close-form">Cancel</button>
+                </div>
+                
                 <div class="privacy-policy">
                     <p>By clicking "Send Message" button, I expressly agree to Djangoz Enterprise <a href="#">Terms
                             of
