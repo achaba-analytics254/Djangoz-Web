@@ -2,6 +2,8 @@
 const openModal = document.getElementById('openModal')
 const closeForm = document.getElementById('close-form')
 const contactForm = document.getElementById('contact-form')
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const navLinks = document.getElementById('nav-links');
 
 openModal.addEventListener('click', () => {
     contactForm.classList.add('show');
@@ -49,5 +51,5 @@ form.addEventListener('submit', async (e) => {
 });
 window.onload = function () {
     // Reset the form fields when the page loads
-    document.getElementById("form").reset();
+    document.getElementById('form').reset();
 };

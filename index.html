@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="description" content="Djangoz Enterprise - Your One Stop Cyber & Tech Solutions">
     <script src="https://kit.fontawesome.com/1ca5926459.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -14,7 +15,7 @@
 <body>
     <header class="header">
         <div class="logo">Djangoz Enterprise</div>
-        <nav class="nav-links" aria-label="Main navigation">
+        <nav class="nav-links" aria-label="Main navigation" id="nav-links">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#explore">Services</a></li>
@@ -65,39 +66,43 @@
             </div>
         </div>
 
-        <section class="main">
+        <section class="services-section">
             <div class="top">
                 <p class="top-p" id="explore">Our Expertise</p>
                 <h3>Bespoke, web services that transforms visitors into engaged customers</h3>
             </div>
             <div class="main-cards">
-                <div class="card-container">
-                    <img src="Web.jpg" alt="Web design illustration">
+                <article class="card-container">
+                    <img src="Web.jpg" alt="Web design illustration showing a laptop with creative interface"
+                        loading="lazy" width="400" height="200">
                     <h3>Web Design</h3>
                     <p>Custom Web Design with interactive interface that leaves your customers glued to the screen</p>
-                    <button>Learn More</button>
-                </div>
-                <div class="card-container">
-                    <img src="print.jpg" alt="Cybersecurity illustration">
+                    <button aria-label="Learn more about Web Design services">Learn More</button>
+                </article>
+                <article class="card-container">
+                    <img src="print.jpg" alt="Cybersecurity illustration showing shield protection" loading="lazy"
+                        width="400" height="200">
                     <h3>Your Digital Solution Partner</h3>
                     <p>Our integrated Cyber Services ensure a consistent and powerful brand presence across all mediums.
                     </p>
-                    <button>Learn More</button>
-                </div>
-                <div class="card-container">
-                    <img src="graphics.jpg" alt="Graphic design illustration">
+                    <button aria-label="Learn more about Digital Solutions">Learn More</button>
+                </article>
+                <article class="card-container">
+                    <img src="graphics.jpg" alt="Graphic design illustration showing creative tools" loading="lazy"
+                        width="400" height="200">
                     <h3>Graphic Design</h3>
                     <p>We venture into eye catching flyers to detailed business cards that makes a difference in your
                         company</p>
-                    <button>Learn More</button>
-                </div>
+                    <button aria-label="Learn more about Graphic Design services">Learn More</button>
+                </article>
             </div>
         </section>
 
-        <div class="info-section">
+        <div class="info">
+                    <div class="info-section">
             <div class="info-text">
                 <h3>Innovative Ideas for <span>Innovative Businesses</span></h3>
-                <p> We develop creative solutions that fuel progressive enterprises, specializing in transformative
+                <p> We develop creative solutions that fuel progressive enterprises, by specializing in transformative
                     thinking that helps visionary businesses stay ahead in an ever evolving marketplace.</p>
                 <button class="explore-services">Get Started</button>
             </div>
@@ -105,41 +110,55 @@
                 <img src="innovative.png" alt="innovation">
             </div>
         </div>
-    </main>
+        </div>
 
-    <footer>
-        <div class="footer-links">
-            
-            <div class="socials">
-                <h2>Djangoz Enterprise</h2>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Djangoz Enterprise</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com" aria-label="Visit our LinkedIn profile" target="_blank"
+                        rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" aria-label="Visit our Twitter profile" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com" aria-label="Visit our Facebook page" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
             </div>
-            <div class="links">
+
+            <div class="quick-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#explore">Services</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
             </div>
-            <div class="links">
+            <div class="quick-links">
                 <h3>Resources</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#explore">Services</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                 </ul>
             </div>
         </div>
 
-
         <div class="bottom-footer">
-            <p>&copy; 2026 DJANGOZ ENTERPRISE | All Rights Reserved</p>
+            <p>&copy; <span id="current-year">2026</span> DJANGOZ ENTERPRISE | All Rights Reserved</p>
+            <p class="footer-links">
+                <a href="/sitemap">Sitemap</a> |
+                <a href="/accessibility">Accessibility</a> |
+                <a href="/contact">Contact</a>
+            </p>
         </div>
-    </footer>
 
+    </footer>
     <script src="main.js"></script>
 </body>
 
