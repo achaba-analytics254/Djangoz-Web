@@ -1,10 +1,19 @@
 
-const openModal = document.getElementById('openModal')
-const closeForm = document.getElementById('close-form')
-const contactForm = document.getElementById('contact-form')
-const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-const navLinks = document.getElementById('nav-links');
+const openModal = document.getElementById('openModal');
+const closeForm = document.getElementById('close-form');
+const contactForm = document.getElementById('contact-form');
+const navBtn = document.getElementById('navBtn');
+const navMenu = document.getElementById('navMenu');
 
+navBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active')
+})
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 992){
+        navMenu.classList.remove('active')
+    }
+})
 openModal.addEventListener('click', () => {
     contactForm.classList.add('show');
 });
