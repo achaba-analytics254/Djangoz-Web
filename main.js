@@ -4,26 +4,10 @@ const closeForm = document.getElementById('close-form');
 const contactForm = document.getElementById('contact-form');
 const navBtn = document.getElementById('navBtn');
 const navMenu = document.getElementById('navMenu');
-const mobileMenuIcon = document.getElementById('navBtn');
 
 navBtn.addEventListener('click', () => {
-    if (navBtn && navMenu){
-        navMenu.classList.toggle('active');
-        navBtn.setAttribute('aria-expanded', !isExpanded);
-
-        if (mobileMenuIcon){
-            if (isExpanded){
-                mobileMenuIcon.classList.remove('fa-times');
-                mobileMenuIcon.classList.add('fa-bars');
-            } else{
-                mobileMenuIcon.classList.remove('fa-bars');
-                mobileMenuIcon.classList.add('fa-times');
-            }
-        }
-        document.body.style.overflow = isExpanded ? 'auto' : 'hidden';
-    }
-
-});
+    navMenu.classList.toggle('active');
+})
 
 window.addEventListener('resize', () => {
     if (window.innerWidth > 992){

@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="preload" href="main.css" as="style">
     <meta name="description" content="Djangoz Enterprise - Your One Stop Cyber & Tech Solutions">
     <script src="https://kit.fontawesome.com/1ca5926459.js" crossorigin="anonymous" async></script>
      <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
-    <title>Djangoz Enterprise</title>
+    <title>Djangoz Enterprise - Cyber & Tech Solutions</title>
 </head>
 
 <body>
     <header class="header">
         <div class="logo">Djangoz Enterprise</div>
-        <button class="nav-btn" id="navBtn" aria-expanded="false" aria-controls=""><i class="fa-solid fa-bars"></i></button>
+        <button class="nav-btn" id="navBtn" aria-expanded="false" aria-controls="navbar">
+            <i class="fas fa-bars"></i>
+        </button>
         <nav class="navbar" id="navMenu">
             <a href="index.html" class="active">Home</a>
-            <a href="#">Resources</a>
+            <a href="#resources">Resources</a>
             <a href="#">Blog</a>
-            <a href="#" id="openModal">Contact</a>
         </nav>
         
     </header>
@@ -140,7 +143,7 @@
                 </ul>
             </div>
             <div class="quick-links">
-                <h3>Resources</h3>
+                <h3 id="resources">Resources</h3>
                 <ul>
                     <li><a href="/terms">Terms of Service</a></li>
                     <li><a href="/privacy">Privacy Policy</a></li>
